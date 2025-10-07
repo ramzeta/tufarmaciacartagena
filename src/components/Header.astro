@@ -16,7 +16,7 @@ const currentPath = Astro.url.pathname;
       <!-- Logo -->
       <a
         href="/"
-        class="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-900 hover:text-emerald-600 transition-colors"
+        class="flex items-center gap-2 text-xl md:text-2xl font-bold text-gray-900 hover:text-emerald-700 transition-colors"
         aria-label="Farmacia Cartagena - Ir a inicio"
       >
         <svg class="w-8 h-8 md:w-10 md:h-10 text-emerald-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -30,8 +30,8 @@ const currentPath = Astro.url.pathname;
         {navItems.map(item => (
           <a
             href={item.href}
-            class={`text-sm font-medium transition-colors hover:text-emerald-600 ${
-              currentPath === item.href ? 'text-emerald-600' : 'text-gray-700'
+            class={`text-sm font-medium transition-colors hover:text-emerald-700 ${
+              currentPath === item.href ? 'text-emerald-700' : 'text-gray-700'
             }`}
             aria-current={currentPath === item.href ? 'page' : undefined}
           >
@@ -58,7 +58,7 @@ const currentPath = Astro.url.pathname;
       <button
         id="mobile-menu-button"
         type="button"
-        class="lg:hidden p-2 text-gray-700 hover:text-emerald-600 hover:bg-gray-100 rounded-lg transition-colors"
+        class="lg:hidden p-2 text-gray-700 hover:text-emerald-700 hover:bg-gray-100 rounded-lg transition-colors"
         aria-label="Abrir menú de navegación"
         aria-expanded="false"
         aria-controls="mobile-menu"
@@ -82,8 +82,8 @@ const currentPath = Astro.url.pathname;
           href={item.href}
           class={`px-4 py-2 text-base font-medium rounded-lg transition-colors ${
             currentPath === item.href
-              ? 'bg-emerald-50 text-emerald-600'
-              : 'text-gray-700 hover:bg-gray-50 hover:text-emerald-600'
+              ? 'bg-emerald-50 text-emerald-700'
+              : 'text-gray-700 hover:bg-gray-50 hover:text-emerald-700'
           }`}
           aria-current={currentPath === item.href ? 'page' : undefined}
         >
