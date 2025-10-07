@@ -3,6 +3,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyActionBar from '../components/StickyActionBar.astro';
+
+const galleryImages = [
+  { src: '/images/galeria/imagen1.webp', alt: 'Fachada de Farmacia Cartagena' },
+  { src: '/images/galeria/imagen2.webp', alt: 'Interior de la farmacia' },
+  { src: '/images/galeria/imagen3.webp', alt: 'Laboratorio de formulación magistral' },
+  { src: '/images/galeria/imagen4.webp', alt: 'Zona de atención al cliente' },
+  { src: '/images/galeria/imagen5.webp', alt: 'Productos de dermocosmética' },
+  { src: '/images/galeria/imagen6.webp', alt: 'Equipo de farmacéuticos' },
+  { src: '/images/galeria/imagen7.webp', alt: 'Instalaciones del laboratorio' },
+  { src: '/images/galeria/imagen8.webp', alt: 'Zona de dispensación' },
+];
 ---
 
 <BaseLayout
@@ -26,15 +37,16 @@ import StickyActionBar from '../components/StickyActionBar.astro';
     <section class="section-padding bg-white">
       <div class="container-custom">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map(i => (
-            <div class="group relative aspect-video bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer">
-              <div class="absolute inset-0 flex items-center justify-center">
-                <svg class="w-24 h-24 text-emerald-700 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                </svg>
-              </div>
-              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-end p-4">
-                <p class="text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Foto {i}</p>
+          {galleryImages.map((image, index) => (
+            <div class="group relative aspect-video rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer">
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading={index < 3 ? 'eager' : 'lazy'}
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-all flex items-end p-4">
+                <p class="text-white font-semibold text-sm">{image.alt}</p>
               </div>
             </div>
           ))}
