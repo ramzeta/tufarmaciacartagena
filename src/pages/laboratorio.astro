@@ -6,8 +6,8 @@ import StickyActionBar from '../components/StickyActionBar.astro';
 ---
 
 <BaseLayout
-  title="Laboratorio Cartagena | Formulación Magistral | Farmacia Cartagena"
-  description="Laboratorio Cartagena. Formulación magistral personalizada, preparaciones dermatológicas, análisis básicos. Laboratorio propio en Cartagena."
+  title="Laboratorio Clínico Cartagena | Análisis Clínicos Avanzados | Farmacia Cartagena"
+  description="Laboratorio Clínico Cartagena. Análisis clínicos completos, bioquímica, hematología, microbiología, inmunología. Tecnología de última generación."
 >
   <Header />
 
@@ -16,10 +16,10 @@ import StickyActionBar from '../components/StickyActionBar.astro';
       <div class="container-custom">
         <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Laboratorio Cartagena
+            Laboratorio Clínico Cartagena
           </h1>
           <p class="text-xl md:text-2xl text-gray-600 mb-8">
-            Formulación magistral y preparados personalizados con la máxima calidad y precisión
+            Análisis clínicos avanzados con tecnología de última generación y resultados precisos
           </p>
         </div>
       </div>
@@ -29,115 +29,239 @@ import StickyActionBar from '../components/StickyActionBar.astro';
       <div class="container-custom">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">¿Qué es la formulación magistral?</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Laboratorio Clínico de Referencia</h2>
             <p class="text-lg text-gray-600 mb-4">
-              La <strong>formulación magistral</strong> es la elaboración individualizada de medicamentos bajo prescripción médica. En nuestro laboratorio preparamos fórmulas específicas cuando no existe un medicamento comercial que se ajuste a las necesidades del paciente.
+              Nuestro <strong>Laboratorio Clínico</strong> cuenta con equipos automatizados de última generación y personal altamente cualificado para realizar análisis clínicos completos con la máxima precisión y rapidez.
+            </p>
+            <p class="text-lg text-gray-600 mb-4">
+              Realizamos pruebas diagnósticas en todas las áreas: bioquímica, hematología, inmunología, microbiología, endocrinología, marcadores tumorales y estudios especializados.
             </p>
             <p class="text-lg text-gray-600">
-              Cada preparado se realiza siguiendo estrictos controles de calidad, con materias primas certificadas y bajo la supervisión de farmacéuticos especializados.
+              <strong>Resultados en 24-48 horas</strong> para la mayoría de pruebas. Urgencias disponibles.
             </p>
           </div>
-          <div class="bg-emerald-100 rounded-xl p-12 flex items-center justify-center">
+          <div class="bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xl p-12 flex items-center justify-center">
             <svg class="w-64 h-64 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
             </svg>
           </div>
         </div>
 
         <div class="mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Nuestros Preparados</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Áreas de Análisis Clínicos</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
+
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Dermatología</h3>
-              <p class="text-gray-600">Cremas, geles, lociones y pomadas para tratamientos dermatológicos específicos.</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Bioquímica Clínica</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Perfil hepático completo</li>
+                <li>• Perfil renal y electrolitos</li>
+                <li>• Perfil lipídico avanzado</li>
+                <li>• Glucemia y HbA1c</li>
+                <li>• Ácido úrico, proteínas totales</li>
+              </ul>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Cápsulas</h3>
-              <p class="text-gray-600">Cápsulas magistrales con principios activos y dosis personalizadas.</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Hematología</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Hemograma completo automatizado</li>
+                <li>• Recuento diferencial leucocitario</li>
+                <li>• Estudio de anemias</li>
+                <li>• Velocidad de sedimentación</li>
+                <li>• Estudio de coagulación</li>
+              </ul>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Pediatría</h3>
-              <p class="text-gray-600">Jarabes, suspensiones y preparados adaptados a dosis pediátricas.</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Inmunología</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Proteína C reactiva (PCR)</li>
+                <li>• Serología de enfermedades infecciosas</li>
+                <li>• Alergias e intolerancias</li>
+                <li>• Autoinmunidad (ANA, FR, Anti-CCP)</li>
+                <li>• Inmunoglobulinas</li>
+              </ul>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Tratamientos Hormonales</h3>
-              <p class="text-gray-600">Preparaciones para terapias hormonales sustitutivas y específicas.</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Microbiología</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Urocultivo y antibiograma</li>
+                <li>• Coprocultivo</li>
+                <li>• Cultivos de exudados</li>
+                <li>• Test rápidos de antígenos</li>
+                <li>• Parásitos en heces</li>
+              </ul>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Control del Dolor</h3>
-              <p class="text-gray-600">Formulaciones analgésicas y antiinflamatorias personalizadas.</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Endocrinología</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Perfil tiroideo (TSH, T3, T4)</li>
+                <li>• Hormonas sexuales</li>
+                <li>• Cortisol y ACTH</li>
+                <li>• Insulina y péptido C</li>
+                <li>• Vitamina D, B12, ácido fólico</li>
+              </ul>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                 </svg>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Análisis Básicos</h3>
-              <p class="text-gray-600">Control de calidad y análisis de parámetros básicos en laboratorio.</p>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Marcadores Tumorales</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• PSA (próstata)</li>
+                <li>• CEA (colo-rectal)</li>
+                <li>• CA 125 (ovario)</li>
+                <li>• CA 15.3 (mama)</li>
+                <li>• AFP (hígado)</li>
+              </ul>
             </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Análisis de Orina</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Sedimento urinario completo</li>
+                <li>• Bioquímica en orina</li>
+                <li>• Proteinuria de 24h</li>
+                <li>• Microalbuminuria</li>
+                <li>• Cociente albúmina/creatinina</li>
+              </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Toxicología</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Niveles de fármacos</li>
+                <li>• Metales pesados</li>
+                <li>• Drogas de abuso</li>
+                <li>• Alcoholemia</li>
+                <li>• Monitorización terapéutica</li>
+              </ul>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Estudios Genéticos</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Test de intolerancia alimentaria</li>
+                <li>• Farmacogenética</li>
+                <li>• Predisposición genética</li>
+                <li>• Nutrigenética</li>
+                <li>• Panel de alergias</li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 md:p-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Garantía de Calidad</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 md:p-12 mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Tecnología de Última Generación</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
-              <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                <svg class="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Analizadores Automatizados</h3>
+              <p class="text-gray-600 text-sm">Equipos de alta precisión para análisis bioquímicos e inmunológicos</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                <svg class="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Sistema LIMS</h3>
+              <p class="text-gray-600 text-sm">Software de gestión de laboratorio para trazabilidad total</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                <svg class="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Resultados Rápidos</h3>
+              <p class="text-gray-600 text-sm">24-48h en análisis rutinarios. Urgencias disponibles</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                 <svg class="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Materias Primas Certificadas</h3>
-              <p class="text-gray-600">Trabajamos exclusivamente con proveedores homologados</p>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Control de Calidad</h3>
+              <p class="text-gray-600 text-sm">Controles internos y externos diarios para máxima fiabilidad</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border-2 border-emerald-200 rounded-2xl p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Proceso de Análisis</h2>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="text-center">
+              <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
+              <h3 class="font-bold text-gray-900 mb-2">Extracción</h3>
+              <p class="text-gray-600 text-sm">Toma de muestras por personal especializado en ayunas o según indicación</p>
             </div>
             <div class="text-center">
-              <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg class="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Trazabilidad Completa</h3>
-              <p class="text-gray-600">Registro detallado de cada preparación realizada</p>
+              <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
+              <h3 class="font-bold text-gray-900 mb-2">Procesamiento</h3>
+              <p class="text-gray-600 text-sm">Análisis automatizado con equipos de última generación</p>
             </div>
             <div class="text-center">
-              <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg class="w-8 h-8 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Equipo Especializado</h3>
-              <p class="text-gray-600">Farmacéuticos con formación en formulación magistral</p>
+              <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
+              <h3 class="font-bold text-gray-900 mb-2">Validación</h3>
+              <p class="text-gray-600 text-sm">Revisión por farmacéuticos especialistas en análisis clínicos</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">4</div>
+              <h3 class="font-bold text-gray-900 mb-2">Entrega</h3>
+              <p class="text-gray-600 text-sm">Resultados disponibles en 24-48h. Recogida en farmacia</p>
             </div>
           </div>
         </div>
@@ -147,17 +271,25 @@ import StickyActionBar from '../components/StickyActionBar.astro';
     <section class="section-padding bg-emerald-600">
       <div class="container-custom text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-          ¿Necesitas una fórmula personalizada?
+          ¿Necesitas realizar análisis clínicos?
         </h2>
-        <p class="text-xl text-emerald-50 mb-8 max-w-2xl mx-auto">
-          Consulta con tu médico y trae tu receta. Prepararemos tu medicamento con la máxima calidad.
+        <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
+          No necesitas cita previa. Ven en ayunas por la mañana o consulta los requisitos específicos.
         </p>
-        <a href="tel:+34968513150" class="bg-white text-emerald-700 hover:bg-emerald-50 font-semibold px-8 py-4 rounded-lg transition-colors duration-200 inline-flex items-center justify-center gap-2 text-lg">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-          </svg>
-          Llámanos: 968 51 31 50
-        </a>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:+34968513150" class="bg-white text-emerald-700 hover:bg-emerald-50 font-semibold px-8 py-4 rounded-lg transition-colors duration-200 inline-flex items-center justify-center gap-2 text-lg shadow-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            Llámanos: 968 51 31 50
+          </a>
+          <a href="/contacto" class="bg-emerald-700 text-white hover:bg-emerald-800 font-semibold px-8 py-4 rounded-lg transition-colors duration-200 inline-flex items-center justify-center gap-2 text-lg shadow-xl">
+            Más información
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </main>
