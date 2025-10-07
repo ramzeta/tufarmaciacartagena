@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #10b981;
+  --color-brand-dark: #059669;
+  --color-brand-light: #d1fae5;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Reducción de movimiento para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Estados de foco visibles (WCAG 2.2) */
+*:focus-visible {
+  outline: 3px solid var(--color-brand-primary);
+  outline-offset: 2px;
+}
+
+/* Estilos base para accesibilidad */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utilidades custom */
+.btn-primary {
+  @apply bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-50 text-gray-900 font-semibold px-6 py-3 rounded-lg border-2 border-gray-300 transition-colors duration-200 inline-flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-12 md:py-16 lg:py-20;
+}

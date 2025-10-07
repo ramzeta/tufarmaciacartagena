@@ -1,0 +1,11 @@
+# robots.txt para tufarmaciacartagena.com
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tufarmaciacartagena.com/sitemap.xml
+
+# Evitar indexación de archivos administrativos
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.vcf$

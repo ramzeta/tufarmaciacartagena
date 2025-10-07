@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://tufarmaciacartagena.com/</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tufarmaciacartagena.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tufarmaciacartagena.com/" />
+  </url>
+
+  <url>
+    <loc>https://tufarmaciacartagena.com/servicios</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tufarmaciacartagena.com/servicios" />
+  </url>
+
+  <url>
+    <loc>https://tufarmaciacartagena.com/laboratorio</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tufarmaciacartagena.com/laboratorio" />
+  </url>
+
+  <url>
+    <loc>https://tufarmaciacartagena.com/galeria</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tufarmaciacartagena.com/galeria" />
+  </url>
+
+  <url>
+    <loc>https://tufarmaciacartagena.com/reseñas</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tufarmaciacartagena.com/reseñas" />
+  </url>
+
+  <url>
+    <loc>https://tufarmaciacartagena.com/contacto</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tufarmaciacartagena.com/contacto" />
+  </url>
+
+  <url>
+    <loc>https://tufarmaciacartagena.com/legal</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tufarmaciacartagena.com/legal" />
+  </url>
+
+</urlset>

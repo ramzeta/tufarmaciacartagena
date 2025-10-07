@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import StickyActionBar from '../components/StickyActionBar.astro';
+---
+
+<BaseLayout
+  title="Galería de Fotos | Farmacia Cartagena"
+  description="Ver fotos del interior y exterior de Farmacia Cartagena. Conoce nuestras instalaciones y laboratorio en Cartagena."
+>
+  <Header />
+
+  <main>
+    <section class="bg-emerald-50 section-padding">
+      <div class="container-custom text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Galería de Fotos
+        </h1>
+        <p class="text-lg text-gray-600">
+          Conoce nuestras instalaciones, laboratorio y equipo
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[1, 2, 3, 4, 5, 6].map(i => (
+            <div class="group relative aspect-video bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-24 h-24 text-emerald-600 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-end p-4">
+                <p class="text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Foto {i}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="mt-12 bg-emerald-50 rounded-xl p-8 text-center">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">¿Quieres ver más?</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            Visítanos en persona para conocer todas nuestras instalaciones y servicios
+          </p>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Calle+Prol.+Angel+Bruna+11+30300+Cartagena+Murcia"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary text-lg"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+            </svg>
+            Cómo llegar
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <StickyActionBar />
+</BaseLayout>

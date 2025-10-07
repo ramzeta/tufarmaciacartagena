@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const { title, description, canonical, ogImage = '/og-image.jpg' } = Astro.props;
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site);
+const siteURL = Astro.site || 'https://tufarmaciacartagena.com';
+---
+
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://maps.googleapis.com" crossorigin />
+
+    <!-- SEO -->
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, siteURL)} />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(ogImage, siteURL)} />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Security Headers vía meta (backup de servidor) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+    <!-- PWA Theme -->
+    <meta name="theme-color" content="#10b981" />
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="es-ES" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
+  </head>
+  <body class="bg-white text-gray-900 antialiased">
+    <slot />
+
+    <!-- UTM Persistence Script -->
+    <script is:inline>
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+        utmKeys.forEach(key => {
+          const value = params.get(key);
+          if (value) sessionStorage.setItem(key, value);
+        });
+      })();
+    </script>
+  </body>
+</html>

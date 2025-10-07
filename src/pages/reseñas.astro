@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import StickyActionBar from '../components/StickyActionBar.astro';
+
+const testimonials = [
+  {
+    name: "María García",
+    rating: 5,
+    date: "Hace 2 semanas",
+    text: "Excelente trato y profesionalidad. Siempre resuelven mis dudas sobre medicación y me aconsejan muy bien. El servicio de formulación magistral es de primera calidad."
+  },
+  {
+    name: "José Martínez",
+    rating: 5,
+    date: "Hace 1 mes",
+    text: "Llevo años viniendo a esta farmacia. El personal es muy amable y conocen perfectamente su trabajo. Recomiendo especialmente el servicio SPD para organizar la medicación."
+  },
+  {
+    name: "Ana López",
+    rating: 5,
+    date: "Hace 3 semanas",
+    text: "Me prepararon una crema dermatológica personalizada y funcionó de maravilla. Muy profesionales y atentos. Sin duda, la mejor farmacia de Cartagena."
+  },
+  {
+    name: "Carlos Sánchez",
+    rating: 4,
+    date: "Hace 1 semana",
+    text: "Buena atención farmacéutica y amplitud de productos. El laboratorio es de gran ayuda para tratamientos específicos."
+  },
+  {
+    name: "Isabel Fernández",
+    rating: 5,
+    date: "Hace 2 meses",
+    text: "Muy contenta con el asesoramiento en dermocosmética. Me ayudaron a encontrar los productos perfectos para mi tipo de piel."
+  },
+  {
+    name: "Pedro Ruiz",
+    rating: 5,
+    date: "Hace 3 semanas",
+    text: "Farmacia de confianza. Siempre disponibles para consultas y encargos. El servicio de WhatsApp es muy cómodo."
+  }
+];
+---
+
+<BaseLayout
+  title="Reseñas de Clientes | Farmacia Cartagena"
+  description="Lee las opiniones y reseñas de nuestros clientes. 4.468 reseñas con valoración media de 4.8/5. Farmacia Cartagena, tu farmacia de confianza."
+>
+  <Header />
+
+  <main>
+    <section class="bg-emerald-50 section-padding">
+      <div class="container-custom text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Reseñas de Nuestros Clientes
+        </h1>
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <div class="flex text-yellow-400" aria-label="4.8 de 5 estrellas">
+            {[...Array(5)].map(() => (
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            ))}
+          </div>
+          <span class="text-2xl font-bold text-gray-900">4.8/5</span>
+        </div>
+        <p class="text-lg text-gray-600">Basado en <strong>4.468 reseñas verificadas</strong></p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {testimonials.map(review => (
+              <article class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                <div class="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 class="font-bold text-gray-900">{review.name}</h3>
+                    <p class="text-sm text-gray-500">{review.date}</p>
+                  </div>
+                  <div class="flex text-yellow-400" aria-label={`${review.rating} de 5 estrellas`}>
+                    {[...Array(review.rating)].map(() => (
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed">{review.text}</p>
+              </article>
+            ))}
+          </div>
+
+          <div class="bg-emerald-50 rounded-xl p-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">¿Has visitado nuestra farmacia?</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Tu opinión es muy importante para nosotros. Comparte tu experiencia y ayuda a otros clientes.
+            </p>
+            <button
+              id="write-review-btn"
+              class="btn-primary text-lg"
+            >
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+              </svg>
+              Escribe tu reseña
+            </button>
+          </div>
+
+          <div class="mt-12 bg-gray-50 rounded-xl p-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">Distribución de Valoraciones</h2>
+            <div class="space-y-3 max-w-2xl mx-auto">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-medium text-gray-700 w-16">5 estrellas</span>
+                <div class="flex-1 bg-gray-200 rounded-full h-3">
+                  <div class="bg-emerald-500 h-3 rounded-full" style="width: 78%"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-700 w-12 text-right">78%</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-medium text-gray-700 w-16">4 estrellas</span>
+                <div class="flex-1 bg-gray-200 rounded-full h-3">
+                  <div class="bg-emerald-500 h-3 rounded-full" style="width: 16%"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-700 w-12 text-right">16%</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-medium text-gray-700 w-16">3 estrellas</span>
+                <div class="flex-1 bg-gray-200 rounded-full h-3">
+                  <div class="bg-emerald-500 h-3 rounded-full" style="width: 4%"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-700 w-12 text-right">4%</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-medium text-gray-700 w-16">2 estrellas</span>
+                <div class="flex-1 bg-gray-200 rounded-full h-3">
+                  <div class="bg-emerald-500 h-3 rounded-full" style="width: 1%"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-700 w-12 text-right">1%</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-medium text-gray-700 w-16">1 estrella</span>
+                <div class="flex-1 bg-gray-200 rounded-full h-3">
+                  <div class="bg-emerald-500 h-3 rounded-full" style="width: 1%"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-700 w-12 text-right">1%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <StickyActionBar />
+
+  <script>
+    const writeReviewBtn = document.getElementById('write-review-btn');
+    writeReviewBtn?.addEventListener('click', () => {
+      // Redirigir a Google My Business o formulario de reseñas
+      alert('Gracias por tu interés. Te redirigiremos a nuestra página de Google para dejar tu reseña.');
+      // window.open('https://g.page/r/...', '_blank');
+    });
+  </script>
+</BaseLayout>

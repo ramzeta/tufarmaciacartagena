@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Farmacia Cartagena
+ORG:Farmacia Cartagena;Laboratorio Cartagena
+TEL;TYPE=VOICE,WORK:+34968513150
+ADR;TYPE=WORK:;;Calle Prol. Angel Bruna, 11;Cartagena;Murcia;30300;España
+URL:https://tufarmaciacartagena.com
+EMAIL:info@tufarmaciacartagena.com
+GEO:37.6026;-0.9860
+CATEGORIES:Farmacia,Laboratorio,Salud
+NOTE:Farmacia y Laboratorio en Cartagena. Formulación magistral\, consejo farmacéutico\, dermocosmética. 4.468 reseñas (4.8/5)
+REV:2025-10-07T00:00:00Z
+END:VCARD
